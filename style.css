@@ -1,0 +1,822 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #172033;
+}
+
+
+.logo span {
+    color: #635bff;
+}
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.nav-menu a {
+    color: #172033;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.nav-menu a:hover {
+    color: #635bff;
+}
+
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #f5f7ff, #ffffff);
+
+    padding: 90px 0;
+}
+
+
+.hero-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+.small-heading {
+    color: #635bff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.product-info h1 {
+    font-size: 58px;
+
+    line-height: 1.1;
+
+    margin-bottom: 5px;
+}
+
+
+.product-info h2 {
+    font-size: 28px;
+
+    color: #555f73;
+
+    margin-bottom: 20px;
+}
+
+
+.description {
+    max-width: 560px;
+
+    color: #697386;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.price-label {
+    color: #697386;
+}
+
+
+.price {
+    font-size: 34px;
+
+    font-weight: 800;
+
+    color: #172033;
+}
+
+
+/* =========================
+   VARIANTS
+========================= */
+
+.variant-section h3,
+.quantity-section h3 {
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+
+.variants {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+.variant {
+    padding: 11px 18px;
+
+    border: 1px solid #d9dce5;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.variant:hover {
+    border-color: #635bff;
+}
+
+
+.variant.active {
+    background: #635bff;
+
+    color: white;
+
+    border-color: #635bff;
+}
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity-control {
+    display: flex;
+
+    align-items: center;
+
+    width: fit-content;
+
+    border: 1px solid #d9dce5;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+
+.quantity-control button {
+    width: 42px;
+
+    height: 42px;
+
+    border: none;
+
+    background: #f5f6fa;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+.quantity-control button:hover {
+    background: #e9eaff;
+}
+
+
+.quantity-control span {
+    width: 45px;
+
+    text-align: center;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   TOTAL
+========================= */
+
+.total-section {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 300px;
+
+    font-size: 19px;
+
+    margin-bottom: 25px;
+}
+
+
+.total-section strong {
+    font-size: 25px;
+
+    color: #635bff;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta-button,
+.submit-button {
+    display: inline-block;
+
+    border: none;
+
+    background: #635bff;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.cta-button:hover,
+.submit-button:hover {
+    background: #4c45d8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-image-container {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.image-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 25px 60px rgba(30, 40, 80, 0.15);
+}
+
+
+.product-image {
+    display: block;
+
+    width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 90px 0;
+
+    background: #ffffff;
+}
+
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+
+.section-heading p {
+    color: #635bff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+
+    margin-top: 8px;
+}
+
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature-card {
+    padding: 30px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.feature-icon {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+    color: #697386;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 90px 0;
+
+    background: #f5f7ff;
+}
+
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+.contact-text h2 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-text > p:last-child {
+    color: #697386;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.enquiry-form {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(30, 40, 80, 0.08);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #d9dce5;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #635bff;
+
+    box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.1);
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+.error {
+    display: block;
+
+    color: #dc3545;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+
+.success-message {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    background: #e8f8ef;
+
+    color: #198754;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #172033;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .product-info {
+        text-align: center;
+    }
+
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .price-section,
+    .variants,
+    .quantity-control {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .total-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .product-image-container {
+        order: -1;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        min-height: 65px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        border-top: 1px solid #eeeeee;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+
+    .nav-menu a {
+        width: 100%;
+
+        padding: 15px 5%;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    .hero {
+        padding: 55px 0;
+    }
+
+
+    .product-info h1 {
+        font-size: 42px;
+    }
+
+
+    .product-info h2 {
+        font-size: 23px;
+    }
+
+
+    .product-image {
+        height: 320px;
+    }
+
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-heading h2,
+    .contact-text h2 {
+        font-size: 32px;
+    }
+
+
+    .enquiry-form {
+        padding: 25px;
+    }
+
+
+    .variants {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .product-info h1 {
+        font-size: 36px;
+    }
+
+
+    .price {
+        font-size: 29px;
+    }
+
+
+    .variants {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        width: 100%;
+    }
+
+
+    .variant {
+        width: 100%;
+    }
+
+
+    .product-image {
+        height: 260px;
+    }
+
+
+    .cta-button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+}

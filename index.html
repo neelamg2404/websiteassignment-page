@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SoundMax - Wireless Headphones</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="#" class="logo">
+                Sound<span>Max</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home">Home</a>
+                <a href="#product">Product</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Menu Button -->
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO / PRODUCT SECTION ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <!-- Product Information -->
+
+                <div class="product-info">
+
+                    <p class="small-heading">
+                        PREMIUM WIRELESS AUDIO
+                    </p>
+
+                    <h1>
+                        SoundMax Pro
+                    </h1>
+
+                    <h2>
+                        Wireless Headphones
+                    </h2>
+
+                    <p class="description">
+                        Experience powerful sound, deep bass and
+                        advanced noise cancellation with SoundMax Pro.
+                        Designed for music, work and everyday life.
+                    </p>
+
+
+                    <!-- Price -->
+
+                    <div class="price-section">
+
+                        <span class="price-label">
+                            Price
+                        </span>
+
+                        <span class="price" id="price">
+                            ₹2,999
+                        </span>
+
+                    </div>
+
+
+                    <!-- Product Variants -->
+
+                    <div class="variant-section">
+
+                        <h3>
+                            Choose Variant
+                        </h3>
+
+                        <div class="variants">
+
+                            <button
+                                class="variant active"
+                                data-price="2999"
+                                data-name="Standard">
+
+                                Standard
+                            </button>
+
+                            <button
+                                class="variant"
+                                data-price="4499"
+                                data-name="Pro">
+
+                                Pro
+                            </button>
+
+                            <button
+                                class="variant"
+                                data-price="5999"
+                                data-name="Premium">
+
+                                Premium
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-section">
+
+                        <h3>
+                            Quantity
+                        </h3>
+
+                        <div class="quantity-control">
+
+                            <button id="decrease">
+                                −
+                            </button>
+
+                            <span id="quantity">
+                                1
+                            </span>
+
+                            <button id="increase">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Total -->
+
+                    <div class="total-section">
+
+                        <span>
+                            Total:
+                        </span>
+
+                        <strong id="totalPrice">
+                            ₹2,999
+                        </strong>
+
+                    </div>
+
+
+                    <!-- CTA -->
+
+                    <a href="#contact" class="cta-button">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+
+                <!-- Product Image -->
+
+                <div class="product-image-container">
+
+                    <div class="image-card">
+
+                        <img
+                            src="./images/headphone.png"
+                            alt="headphones"
+                            class="product-image"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p>
+                        WHY CHOOSE US
+                    </p>
+
+                    <h2>
+                        Built for Better Sound
+                    </h2>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ♪
+                        </div>
+
+                        <h3>
+                            Premium Sound
+                        </h3>
+
+                        <p>
+                            Enjoy clear audio with powerful bass
+                            and detailed sound.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🔋
+                        </div>
+
+                        <h3>
+                            Long Battery
+                        </h3>
+
+                        <p>
+                            Listen throughout the day with
+                            long-lasting battery life.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🎧
+                        </div>
+
+                        <h3>
+                            Comfortable Design
+                        </h3>
+
+                        <p>
+                            Lightweight ear cushions designed
+                            for comfortable listening.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ENQUIRY FORM ================= -->
+
+        <section class="contact" id="contact">
+
+            <div class="container contact-container">
+
+                <div class="contact-text">
+
+                    <p class="small-heading">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Have a Question?
+                    </h2>
+
+                    <p>
+                        Fill out the enquiry form and our team
+                        will contact you shortly.
+                    </p>
+
+                </div>
+
+
+                <form id="enquiryForm" class="enquiry-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                        >
+
+                        <small class="error" id="nameError"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+
+                        <small class="error" id="emailError"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                        >
+
+                        <small class="error" id="phoneError"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your enquiry"
+                        ></textarea>
+
+                        <small class="error" id="messageError"></small>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-button">
+                        Submit Enquiry
+                    </button>
+
+
+                    <!-- Success Message -->
+
+                    <div id="successMessage" class="success-message">
+                        ✓ Thank you! Your enquiry has been submitted successfully.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 SoundMax. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
